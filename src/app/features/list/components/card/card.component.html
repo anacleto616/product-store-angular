@@ -1,0 +1,11 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title class="custom-card-title">{{
+      productTitle()
+    }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button (click)="onEdit()">Editar</button>
+    <button mat-button (click)="onDelete()">Deletar</button>
+  </mat-card-actions>
+</mat-card>
