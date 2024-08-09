@@ -25,8 +25,7 @@ import { Observable } from 'rxjs';
         mat-raised-button
         color="accent"
         (click)="onYes()"
-        cdkFocusInitial
-      >
+        cdkFocusInitial>
         Sim
       </button>
     </mat-dialog-actions>

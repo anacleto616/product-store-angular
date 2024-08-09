@@ -39,7 +39,7 @@ export class ListComponent {
   // }
 
   loadProducts() {
-    this.productService.index().subscribe((products) => {
+    this.productService.index().subscribe(products => {
       this.products.set(products);
     });
   }
@@ -51,7 +51,7 @@ export class ListComponent {
   onDelete(product: Product) {
     this.confirmationDialogService
       .openDialog()
-      .pipe(filter((answer) => answer))
+      .pipe(filter(answer => answer))
       .subscribe(() => {
         this.productService
           .delete(product.id)

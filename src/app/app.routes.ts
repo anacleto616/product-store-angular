@@ -19,7 +19,7 @@ export const routes: Routes = [
     // forma com lazy loading, mais performance para apps robustas
     loadComponent: () =>
       import('./features/create/create.component').then(
-        (module) => module.CreateComponent
+        module => module.CreateComponent
       ),
   },
   {
@@ -33,7 +33,7 @@ export const routes: Routes = [
     // forma com lazy loading, mais performance para apps robustas
     loadComponent: () =>
       import('./features/edit/edit.component').then(
-        (module) => module.EditComponent
+        module => module.EditComponent
       ),
   },
 ];
