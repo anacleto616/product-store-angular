@@ -1,4 +1,4 @@
-import { Component, EventEmitter, input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Output, OnInit } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -22,7 +22,7 @@ import { Product } from '../../interfaces/product.interface';
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.scss',
 })
-export class FormsComponent {
+export class FormsComponent implements OnInit {
   product = input<Product | null>(null);
 
   form!: FormGroup;

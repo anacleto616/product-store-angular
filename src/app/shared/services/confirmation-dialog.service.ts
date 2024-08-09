@@ -13,7 +13,7 @@ import {
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'confirmation-dialog',
+  selector: 'app-confirmation-dialog',
   template: `
     <h2 mat-dialog-title>Deletar produto</h2>
     <mat-dialog-content>
